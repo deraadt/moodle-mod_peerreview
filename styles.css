@@ -1,0 +1,309 @@
+/* TODO make styles more specific */
+
+.progressBox {
+	float: left;
+	width: 200px;
+	height: 45px;
+	margin: 0 10px 10px 0;
+    padding: 5px;
+    border: 3px solid;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progressBoxEnd {
+    clear:both;
+    height:10px;
+}
+
+.progressNumber {
+	font-weight: bold;
+	font-size: 250%;
+    margin: 0;
+    padding: 0;
+	width: 20px;
+    height: 35px;
+    position: absolute;
+    top: 0px;
+    line-height: 40px;
+}
+
+.progressTitle {
+	font-weight: bold;
+	font-size: 120%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 30px;
+}
+
+.progressMessage {
+	color: #000000;
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.greyProgressBox .progressMessage {
+	color: #999999;
+}
+
+.redStatusBox {
+	border-color: #ff3333;
+	background: #ffe9e9 url("pix/cross.gif") no-repeat 95% 20%;
+	color: #ff3333;
+}
+
+.blueProgressBox {
+	border-color: #3333cc;
+	background: #e9e9ff url("pix/alert.gif") no-repeat 95% 20%;
+	color: #3333cc;
+}
+
+.greyProgressBox {
+	border-color: #999999;
+	background: #e9e9e9;
+	color: #999999;
+}
+
+.greenProgressBox {
+	border-color: #339933;
+	background: #e9ffe9 url("pix/tick.gif") no-repeat 95% 20%;
+	color: #339933;
+}
+
+.errorStatus {
+	color:#ff6600;
+	background:#ffff00;
+	padding:2px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.goodStatus {
+	color:#009900;
+	background:#ccffcc;
+	padding:2px;
+}
+
+.criteriaTable {
+    width: 100%;
+}
+
+.criteriaTable .r0 {
+    background: transparent;
+}
+
+.criteriaTable .r1 {
+    background:#f0f0f0;
+}
+
+.criteriaCheckboxColumn {
+    vertical-align:top;
+    width:15px;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.criteriaCheckboxColumn input {
+    margin-right: 0 !important;
+}
+
+.criteriaTextColumn {
+    vertical-align:top;
+}
+
+.criteriaDisplayRow {
+    border-top:1px dotted #e9e9e9;
+}
+
+.criteriaDisplayColumn {
+    padding: 5px;
+    margin: 0;
+    text-align: left;
+    vertical-align:top;
+    width: 95%;
+}
+
+.criteriaField {
+    width: 100% !important;
+}
+
+.reviewDetailsTable, .reviewDetailsTable td {
+    padding: 0;
+    margin: 0;
+}
+
+.reviewCommentRow {
+    vertical-align:bottom;
+    padding:0;
+    margin: 0;
+    width: 100%;
+}
+
+.reviewDetailsRow {
+    font-size:x-small;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    font-style: italic;
+}
+
+.reviewDetailsRow img {
+    vertical-align:middle;
+    border:none;
+}
+
+.reviewDateColumn {
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    top: 0;
+}
+
+.commentTextBox {
+    font-family: monospace;
+    padding:5px;
+    margin:0;
+    border:none;
+    white-space: pre-wrap;
+}
+
+.writeCommentTextBox {
+    font-family: monospace;
+    width:98%;
+}
+
+.reviewStatus {
+    padding:5px 0;
+}
+
+.status0 {
+    background: #ff9999;
+    padding: 4px 1px;
+}
+
+.status1 {
+    background: #99ff99;
+    padding: 4px 1px;
+}
+
+.userPrefs {
+    margin: 5px 10px;
+    right: 0;
+    text-align:right;
+}
+
+.leftHeading {
+    text-align: left;
+}
+
+.submissionInfoTable td {
+    padding: 3px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.submissionInfoTable .labelColumn {
+    font-weight: bold;
+}
+
+.submissionInfoTable .smallicon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#hiddenSubmission {
+    max-height: 400px;
+    overflow: auto;
+    padding: 0 5px 5px 0;
+    width: 100%;
+}
+
+#onlineTextSubmission {
+    max-height: 200px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.peerReviewButton, .peerReviewButton form, .peerReviewButton form div {
+    display:inline;
+}
+
+.reviewButton {
+    text-align:center;
+    padding:10px 5px;
+}
+
+.reviewButton div, .reviewButton form {
+    display: inline;
+}
+
+.massMarkTable div table, .analysis div table {
+    margin: auto;
+}
+
+.analysis {
+    text-align: center;
+}
+
+.markSummaryValue  {
+    text-align:right;
+    width:50px;
+    margin:0;
+}
+
+#rewardCell {
+    border-bottom:1px solid #000000;
+    padding:2px
+}
+
+#lostFileLink {
+    text-align:right;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#mod_peerreview_intro.generalbox {
+    width: 100%;
+}
+
+#hiddenDescription {
+    width: 95%;
+}
+
+.submissionstats {
+    min-width: 350px;
+    display: inline-block;
+}
+
+.reviewstats {
+    display: inline-block;
+}
+
+.submissions td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.submissions td .smallicon {
+    vertical-align: middle;
+}
+
+.submissiondetails {
+    position: relative;
+    left: 45px;
+    margin-bottom: 10px;
+}
+
+.submissiondetails .userpicture {
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    width: 35px;
+}
