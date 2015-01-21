@@ -118,10 +118,10 @@ $reviewStats = get_review_statistics($peerreview);
 
 //     // Find the next user who has submitted
 //     if (($auser = $DB->get_records_sql($select.$sql.$sort, null, $offset+1)) !== false) {
-    
+
 //         $nextuser = array_shift($auser);
 //         $offset++;
-        
+
 //         while($nextuser && !$nextuser->timecreated) {
 //             $nextuser = array_shift($auser);
 //             $offset++;
@@ -156,7 +156,7 @@ $moderationCount = $DB->count_records_sql($moderationCountSQL);
 $moderationtarget = get_user_preferences('assignment_moderationtarget', 0);
 echo get_string('moderations','peerreview').': ';
 if ($moderationCount < $moderationtarget) {
-    echo $OUTPUT->tag('span', $moderationCount.' ('.get_string('moderationtargetnotmet','peerreview'), array('class'=>'errorStatus'));    
+    echo $OUTPUT->tag('span', $moderationCount.' ('.get_string('moderationtargetnotmet','peerreview'), array('class'=>'errorStatus'));
 }
 else {
     echo $moderationCount;
